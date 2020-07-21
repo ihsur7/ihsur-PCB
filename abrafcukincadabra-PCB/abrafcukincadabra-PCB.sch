@@ -1,7 +1,8 @@
 EESchema Schematic File Version 4
+LIBS:abrafcukincadabra-PCB-cache
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -64,29 +65,16 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 5F15D841
-P 4300 4150
-F 0 "R?" V 4104 4150 50  0000 C CNN
-F 1 "10k" V 4195 4150 50  0000 C CNN
-F 2 "" H 4300 4150 50  0001 C CNN
-F 3 "~" H 4300 4150 50  0001 C CNN
-	1    4300 4150
+P 4050 4150
+F 0 "R?" V 3854 4150 50  0000 C CNN
+F 1 "10k" V 3945 4150 50  0000 C CNN
+F 2 "" H 4050 4150 50  0001 C CNN
+F 3 "~" H 4050 4150 50  0001 C CNN
+	1    4050 4150
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F15F785
-P 4850 4150
-F 0 "#PWR?" H 4850 3900 50  0001 C CNN
-F 1 "GND" H 4855 3977 50  0000 C CNN
-F 2 "" H 4850 4150 50  0001 C CNN
-F 3 "" H 4850 4150 50  0001 C CNN
-	1    4850 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3650 4150 4200 4150
-Wire Wire Line
-	4400 4150 4850 4150
+	3650 4150 3950 4150
 $Comp
 L Device:R_Small R?
 U 1 1 5F160E3F
@@ -349,4 +337,294 @@ Wire Wire Line
 	2300 2050 2300 1700
 Wire Wire Line
 	1900 1700 1900 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5F15F785
+P 4450 4150
+F 0 "#PWR?" H 4450 3900 50  0001 C CNN
+F 1 "GND" H 4455 3977 50  0000 C CNN
+F 2 "" H 4450 4150 50  0001 C CNN
+F 3 "" H 4450 4150 50  0001 C CNN
+	1    4450 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4150 4450 4150
+$Comp
+L Device:R_Small R?
+U 1 1 5F16F6CD
+P 2300 1300
+F 0 "R?" H 2359 1346 50  0000 L CNN
+F 1 "R_Small" H 2359 1255 50  0000 L CNN
+F 2 "" H 2300 1300 50  0001 C CNN
+F 3 "~" H 2300 1300 50  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F1709E9
+P 2300 1000
+F 0 "#PWR?" H 2300 850 50  0001 C CNN
+F 1 "+5V" H 2315 1173 50  0000 C CNN
+F 2 "" H 2300 1000 50  0001 C CNN
+F 3 "" H 2300 1000 50  0001 C CNN
+	1    2300 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1700 2300 1400
+Connection ~ 2300 1700
+Wire Wire Line
+	2300 1200 2300 1000
+Text GLabel 1200 3050 0    50   Input ~ 0
+D+
+Text GLabel 1200 3150 0    50   Input ~ 0
+D-
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5F17DC86
+P 5650 2000
+F 0 "J?" H 5757 2867 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5757 2776 50  0000 C CNN
+F 2 "" H 5800 2000 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5800 2000 50  0001 C CNN
+	1    5650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F17FD55
+P 5650 3350
+F 0 "#PWR?" H 5650 3100 50  0001 C CNN
+F 1 "GND" H 5655 3177 50  0000 C CNN
+F 2 "" H 5650 3350 50  0001 C CNN
+F 3 "" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5F181E54
+P 6650 1400
+F 0 "#PWR?" H 6650 1250 50  0001 C CNN
+F 1 "VCC" H 6667 1573 50  0000 C CNN
+F 2 "" H 6650 1400 50  0001 C CNN
+F 3 "" H 6650 1400 50  0001 C CNN
+	1    6650 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1400 6650 1400
+$Comp
+L Device:Polyfuse F?
+U 1 1 5F1838CE
+P 7150 1400
+F 0 "F?" V 6925 1400 50  0000 C CNN
+F 1 "500mA Hold" V 7016 1400 50  0000 C CNN
+F 2 "" H 7200 1200 50  0001 L CNN
+F 3 "~" H 7150 1400 50  0001 C CNN
+	1    7150 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 1400 7000 1400
+Connection ~ 6650 1400
+$Comp
+L power:+5V #PWR?
+U 1 1 5F185145
+P 7750 1400
+F 0 "#PWR?" H 7750 1250 50  0001 C CNN
+F 1 "+5V" H 7765 1573 50  0000 C CNN
+F 2 "" H 7750 1400 50  0001 C CNN
+F 3 "" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1400 7550 1400
+$Comp
+L Device:R_Small R?
+U 1 1 5F1872BC
+P 5350 3150
+F 0 "R?" H 5409 3196 50  0000 L CNN
+F 1 "1M" H 5409 3105 50  0000 L CNN
+F 2 "" H 5350 3150 50  0001 C CNN
+F 3 "~" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F1893E4
+P 4950 3150
+F 0 "C?" H 5042 3196 50  0000 L CNN
+F 1 "4.7uF" H 5042 3105 50  0000 L CNN
+F 2 "" H 4950 3150 50  0001 C CNN
+F 3 "~" H 4950 3150 50  0001 C CNN
+	1    4950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2900 5350 2950
+Wire Wire Line
+	5350 3250 5350 3350
+Wire Wire Line
+	5350 3350 5650 3350
+Connection ~ 5650 3350
+Wire Wire Line
+	5350 2950 4950 2950
+Wire Wire Line
+	4950 2950 4950 3050
+Connection ~ 5350 2950
+Wire Wire Line
+	5350 2950 5350 3050
+Wire Wire Line
+	4950 3250 4950 3350
+Wire Wire Line
+	4950 3350 5350 3350
+Connection ~ 5350 3350
+$Comp
+L Device:R_Small R?
+U 1 1 5F18CD83
+P 6550 1700
+F 0 "R?" V 6354 1700 50  0000 C CNN
+F 1 "5.1k" V 6445 1700 50  0000 C CNN
+F 2 "" H 6550 1700 50  0001 C CNN
+F 3 "~" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F18D5AE
+P 6550 1600
+F 0 "R?" V 6354 1600 50  0000 C CNN
+F 1 "5.1k" V 6445 1600 50  0000 C CNN
+F 2 "" H 6550 1600 50  0001 C CNN
+F 3 "~" H 6550 1600 50  0001 C CNN
+	1    6550 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 1600 6450 1600
+Wire Wire Line
+	6650 1600 7000 1600
+Wire Wire Line
+	7000 3100 5650 3100
+Wire Wire Line
+	6250 1700 6450 1700
+Connection ~ 5650 3100
+Wire Wire Line
+	5650 3100 5650 3250
+Wire Wire Line
+	5650 2900 5650 3000
+Wire Wire Line
+	7000 1600 7000 3100
+Wire Wire Line
+	6650 1700 6900 1700
+Wire Wire Line
+	6900 1700 6900 3000
+Wire Wire Line
+	6900 3000 5650 3000
+Connection ~ 5650 3000
+Wire Wire Line
+	5650 3000 5650 3100
+Wire Wire Line
+	6250 1900 6550 1900
+Wire Wire Line
+	6250 2000 6550 2000
+Wire Wire Line
+	6550 2000 6550 1900
+Connection ~ 6550 1900
+Wire Wire Line
+	6250 2100 6550 2100
+Wire Wire Line
+	6250 2200 6550 2200
+Wire Wire Line
+	6550 2200 6550 2100
+Connection ~ 6550 2100
+Wire Wire Line
+	6550 1900 8100 1900
+Wire Wire Line
+	6550 2100 7200 2100
+Text GLabel 9400 1900 2    50   Input ~ 0
+D-
+Text GLabel 9400 2100 2    50   Input ~ 0
+D+
+$Comp
+L random-keyboard-parts:PRTR5V0U2X U?
+U 1 1 5F1A270B
+P 7650 2500
+F 0 "U?" H 7650 2797 60  0000 C CNN
+F 1 "PRTR5V0U2X" H 7650 2691 60  0000 C CNN
+F 2 "" H 7650 2500 60  0001 C CNN
+F 3 "" H 7650 2500 60  0001 C CNN
+	1    7650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2450 6550 2450
+Wire Wire Line
+	6550 2450 6550 3250
+Wire Wire Line
+	6550 3250 5650 3250
+Connection ~ 5650 3250
+Wire Wire Line
+	5650 3250 5650 3350
+Wire Wire Line
+	7350 2550 7200 2550
+Wire Wire Line
+	7200 2550 7200 2100
+Connection ~ 7200 2100
+Wire Wire Line
+	7200 2100 9400 2100
+Wire Wire Line
+	7950 2550 8100 2550
+Wire Wire Line
+	8100 2550 8100 1900
+Connection ~ 8100 1900
+Wire Wire Line
+	8100 1900 9400 1900
+Wire Wire Line
+	7950 2450 8000 2450
+Wire Wire Line
+	8000 2450 8000 1550
+Wire Wire Line
+	8000 1550 7550 1550
+Wire Wire Line
+	7550 1550 7550 1400
+Connection ~ 7550 1400
+Wire Wire Line
+	7550 1400 7750 1400
+NoConn ~ 6250 2500
+NoConn ~ 6250 2600
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5F1AEAF4
+P 5550 4250
+F 0 "SW?" H 5550 4617 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 5550 4526 50  0000 C CNN
+F 2 "" H 5400 4410 50  0001 C CNN
+F 3 "~" H 5550 4510 50  0001 C CNN
+	1    5550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1B02DD
+P 4900 4250
+F 0 "#PWR?" H 4900 4000 50  0001 C CNN
+F 1 "GND" H 4905 4077 50  0000 C CNN
+F 2 "" H 4900 4250 50  0001 C CNN
+F 3 "" H 4900 4250 50  0001 C CNN
+	1    4900 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 4150 0    50   Input ~ 0
+EN2
+Text GLabel 5250 4350 0    50   Input ~ 0
+EN1
+Wire Wire Line
+	4900 4250 5250 4250
 $EndSCHEMATC
