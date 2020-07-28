@@ -18,4 +18,7 @@
   (lib (name acheron_MXH)(type KiCad)(uri C:/Users/rushi/Documents/GitHub/AcheronLibrary/footprints/acheron_MXH.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri C:/Users/rushi/Documents/GitHub/random-keyboard-parts.pretty)(options "")(descr ""))
   (lib (name Type-C)(type KiCad)(uri C:/Users/rushi/Documents/GitHub/Type-C.pretty)(options "")(descr ""))
+  (lib (name Keebio-Parts)(type KiCad)(uri C:/Users/rushi/Documents/GitHub/Keebio-Parts.pretty)(options "")(descr ""))
+  (lib (name Package_TO_SOT_SMD)(type KiCad)(uri ${KIPRJMOD}/Package_TO_SOT_SMD.pretty)(options "")(descr ""))
+  (lib (name Nexperia)(type KiCad)(uri C:/Users/rushi/Documents/GitHub/kicad/footprints/Nexperia)(options "")(descr ""))
 )
