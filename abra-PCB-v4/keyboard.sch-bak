@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keyboard-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -2645,13 +2646,9 @@ F 3 "~" H 21700 8860 50  0001 C CNN
 	1    21700 8600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	22000 8700 22100 8700
-Wire Wire Line
-	22000 8500 22100 8500
-Text GLabel 22100 8700 2    50   Input ~ 0
+Text GLabel 22000 8700 2    50   Input ~ 0
 ENB2
-Text GLabel 22100 8500 2    50   Input ~ 0
+Text GLabel 22000 8500 2    50   Input ~ 0
 ENB1
 Text GLabel 21300 1300 0    50   Input ~ 0
 ENB1
@@ -2927,13 +2924,11 @@ U 1 1 5F47CD4C
 P 1400 4900
 F 0 "SW2" H 1400 5185 50  0000 C CNN
 F 1 "SW_Push" H 1400 5094 50  0000 C CNN
-F 2 "random-keyboard-parts:Reset_Pretty" H 1400 5100 50  0001 C CNN
+F 2 "Keebio-Parts:SW_SPST_3x3" H 1400 5100 50  0001 C CNN
 F 3 "~" H 1400 5100 50  0001 C CNN
 	1    1400 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 4900 1600 5050
 Wire Wire Line
 	1200 4900 950  4900
 $Comp
@@ -4634,54 +4629,6 @@ Connection ~ 19150 3450
 Connection ~ 19150 4450
 Connection ~ 19150 5450
 Connection ~ 19150 6450
-Text GLabel 2850 3400 0    50   Input ~ 0
-MISO
-Text GLabel 2850 3500 0    50   Input ~ 0
-SCK
-Text GLabel 2850 3600 0    50   Input ~ 0
-RST
-Text GLabel 3550 3500 2    50   Input ~ 0
-MOSI
-$Comp
-L power:GND #PWR0120
-U 1 1 6269E757
-P 3550 3600
-F 0 "#PWR0120" H 3550 3350 50  0001 C CNN
-F 1 "GND" H 3555 3427 50  0000 C CNN
-F 2 "" H 3550 3600 50  0001 C CNN
-F 3 "" H 3550 3600 50  0001 C CNN
-	1    3550 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0121
-U 1 1 626A0384
-P 3550 3400
-F 0 "#PWR0121" H 3550 3250 50  0001 C CNN
-F 1 "+5V" H 3565 3573 50  0000 C CNN
-F 2 "" H 3550 3400 50  0001 C CNN
-F 3 "" H 3550 3400 50  0001 C CNN
-	1    3550 3400
-	1    0    0    -1  
-$EndComp
-Text GLabel 1500 5050 0    50   Input ~ 0
-RST
-Wire Wire Line
-	1500 5050 1600 5050
-Connection ~ 1600 5050
-Wire Wire Line
-	1600 5050 1600 5200
-$Comp
-L keyboard-rescue:TC2030-AVR-keebio P1
-U 1 1 5F2CE766
-P 3200 3500
-F 0 "P1" H 3200 3792 40  0000 C CNN
-F 1 "TC2030-AVR" H 3200 3716 40  0000 C CNN
-F 2 "Keebio-Parts:Header-6-Pin-ZigZag" H 3200 3500 50  0001 C CNN
-F 3 "" H 3200 3500 50  0001 C CNN
-	1    3200 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 14900 3650 15000
 $Comp
@@ -5310,4 +5257,38 @@ Text GLabel 2950 5900 2    50   Input ~ 0
 col9
 Text GLabel 2950 6400 2    50   Input ~ 0
 col6
+Text GLabel 2950 6500 2    50   Input ~ 0
+col7
+Text GLabel 2950 6600 2    50   Input ~ 0
+col8
+NoConn ~ 1750 5800
+Text GLabel 2950 6700 2    50   Input ~ 0
+row0
+Wire Wire Line
+	1600 4900 1600 5200
+Text GLabel 2950 6900 2    50   Input ~ 0
+row1
+Text GLabel 2950 6800 2    50   Input ~ 0
+row3
+Text GLabel 2950 6100 2    50   Input ~ 0
+row4
+Text GLabel 2950 5800 2    50   Input ~ 0
+row5
+Text GLabel 21400 8500 0    50   Input ~ 0
+ENA
+Text GLabel 21400 8700 0    50   Input ~ 0
+ENB
+Wire Wire Line
+	21400 8600 21100 8600
+$Comp
+L power:GND #PWR?
+U 1 1 5FBF5950
+P 21100 8600
+F 0 "#PWR?" H 21100 8350 50  0001 C CNN
+F 1 "GND" H 21105 8427 50  0000 C CNN
+F 2 "" H 21100 8600 50  0001 C CNN
+F 3 "" H 21100 8600 50  0001 C CNN
+	1    21100 8600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
