@@ -5296,4 +5296,8 @@ Wire Wire Line
 	7250 4350 8250 4350
 Connection ~ 7250 4350
 Connection ~ 8250 4350
+Text GLabel 2950 6200 2    50   Input ~ 0
+ENB1
+Text GLabel 2950 5200 2    50   Input ~ 0
+col13
 $EndSCHEMATC
