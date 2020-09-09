@@ -4414,18 +4414,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 5200 7250 5350
 Connection ~ 6850 4350
-$Comp
-L MX_Alps_Hybrid:MX-LED K_45
-U 1 1 6219926C
-P 7150 4350
-F 0 "K_45" H 7183 4573 60  0000 C CNN
-F 1 "MX-NoLED" H 7183 4499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1.75U" H 6525 4325 60  0001 C CNN
-F 3 "" H 6525 4325 60  0001 C CNN
-	1    7150 4350
-	1    0    0    -1  
-$EndComp
-Connection ~ 7100 4500
 Wire Wire Line
 	20150 1650 19150 1650
 Connection ~ 7150 1650
@@ -5280,4 +5268,32 @@ Wire Wire Line
 	9050 10400 9450 10400
 Connection ~ 9050 10400
 Connection ~ 9450 10400
+Text GLabel 2950 8100 2    50   Input ~ 0
+col0
+Text GLabel 2950 8000 2    50   Input ~ 0
+col1
+Text GLabel 2950 7900 2    50   Input ~ 0
+col2
+Text GLabel 2950 7800 2    50   Input ~ 0
+col3
+Text GLabel 2950 7700 2    50   Input ~ 0
+col4
+Text GLabel 2950 7600 2    50   Input ~ 0
+col5
+Connection ~ 7100 4500
+$Comp
+L MX_Alps_Hybrid:MX-LED K_45
+U 1 1 6219926C
+P 7150 4350
+F 0 "K_45" H 7183 4573 60  0000 C CNN
+F 1 "MX-NoLED" H 7183 4499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1.75U" H 6525 4325 60  0001 C CNN
+F 3 "" H 6525 4325 60  0001 C CNN
+	1    7150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4350 8250 4350
+Connection ~ 7250 4350
+Connection ~ 8250 4350
 $EndSCHEMATC
