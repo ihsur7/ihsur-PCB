@@ -2680,17 +2680,6 @@ $EndComp
 Wire Wire Line
 	6700 4500 7100 4500
 $Comp
-L keyboard-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
-U 1 1 5F1D63B5
-P 2350 6700
-F 0 "U1" H 2350 4811 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 2350 4720 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2350 6700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2350 6700 50  0001 C CNN
-	1    2350 6700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5F1DA9CA
 P 2000 8500
@@ -5299,5 +5288,26 @@ Connection ~ 8250 4350
 Text GLabel 2950 6200 2    50   Input ~ 0
 ENB1
 Text GLabel 2950 5200 2    50   Input ~ 0
+col13
+Text GLabel 2950 5300 2    50   Input ~ 0
 col12
+Text GLabel 2950 5400 2    50   Input ~ 0
+col11
+Text GLabel 2950 5500 2    50   Input ~ 0
+col10
+$Comp
+L keyboard-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U1
+U 1 1 5F1D63B5
+P 2350 6700
+F 0 "U1" H 2350 4811 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2350 4720 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2350 6700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2350 6700 50  0001 C CNN
+	1    2350 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2950 5900 2    50   Input ~ 0
+col9
+Text GLabel 2950 6400 2    50   Input ~ 0
+col6
 $EndSCHEMATC
