@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keyboard-4-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -5257,13 +5258,13 @@ col7
 Text GLabel 3500 6350 2    50   Input ~ 0
 col8
 NoConn ~ 1750 5800
-Text GLabel 3500 6450 2    50   Input ~ 0
+Text GLabel 2950 5900 2    50   Input ~ 0
 row0
 Wire Wire Line
 	1600 4900 1600 5200
-Text GLabel 3500 6650 2    50   Input ~ 0
+Text GLabel 2950 5500 2    50   Input ~ 0
 row1
-Text GLabel 3500 6550 2    50   Input ~ 0
+Text GLabel 2950 5300 2    50   Input ~ 0
 row3
 Text GLabel 3500 5850 2    50   Input ~ 0
 row4
@@ -5298,4 +5299,6 @@ Text GLabel 3500 5250 2    50   Input ~ 0
 col11
 Text GLabel 3500 6750 2    50   Input ~ 0
 RGBIN
+Text GLabel 2950 5400 2    50   Input ~ 0
+row2
 $EndSCHEMATC
