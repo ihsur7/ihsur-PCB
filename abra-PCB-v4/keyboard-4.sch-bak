@@ -5200,8 +5200,6 @@ Wire Wire Line
 	7250 4350 8250 4350
 Connection ~ 7250 4350
 Connection ~ 8250 4350
-Text GLabel 3850 5950 2    50   Input ~ 0
-ENB1
 Text GLabel 2950 6900 2    50   Input ~ 0
 col13
 Text GLabel 2950 6800 2    50   Input ~ 0
@@ -5265,7 +5263,7 @@ Text GLabel 2950 5600 2    50   Input ~ 0
 col9
 Text GLabel 2950 7000 2    50   Input ~ 0
 col11
-Text GLabel 4250 5800 2    50   Input ~ 0
+Text GLabel 2950 7600 2    50   Input ~ 0
 RGBIN
 Text GLabel 2950 5400 2    50   Input ~ 0
 row2
