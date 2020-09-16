@@ -5296,4 +5296,7 @@ Connection ~ 21550 2300
 Connection ~ 21550 1150
 Wire Wire Line
 	21550 1150 21550 850 
+Wire Wire Line
+	7250 3900 7250 4350
+Connection ~ 7250 3900
 $EndSCHEMATC
