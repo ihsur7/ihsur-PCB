@@ -1,0 +1,35 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# EVP-BB2A9B000
+#
+DEF EVP-BB2A9B000 S 0 40 N N 1 L N
+F0 "S" -100 100 50 H V L BNN
+F1 "EVP-BB2A9B000" -100 -100 50 H V L BNN
+F2 "SW_EVP-BB2A9B000" 0 0 50 H I L BNN
+F3 "EVP-BB2A9B000" 0 0 50 H I L BNN
+F4 "Tactile Switch SPST-NO Top Actuated Surface Mount" 0 0 50 H I L BNN
+F5 "https://snapeda.com/shop?store=DigiKey&id=584571" 0 0 50 H I L BNN
+F6 "P19888CT-ND" 0 0 50 H I L BNN
+F7 "0.58mm" 0 0 50 H I L BNN
+F8 "https://snapeda.com/shop?store=Mouser&id=584571" 0 0 50 H I L BNN
+F9 "None" 0 0 50 H I L BNN
+F10 "https://snapeda.com/shop?store=Arrow+Electronics&id=584571" 0 0 50 H I L BNN
+F11 "Panasonic Electronic" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 6 -100 0 110 84 N
+C 100 0 13 0 0 6 N
+P 2 0 0 6 200 0 115 0 N
+P 2 0 0 6 -100 0 -200 0 N
+P 2 0 0 6 -200 100 -200 -100 N
+P 2 0 0 6 200 100 200 -100 N
+X ~ A1 -300 100 100 R 40 40 0 0 P 
+X ~ A2 -300 -100 100 R 40 40 0 0 P 
+X ~ B1 300 100 100 L 40 40 0 0 P 
+X ~ B2 300 -100 100 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
